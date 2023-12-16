@@ -40,6 +40,7 @@ nav {
 nav a {
     text-decoration:  none;
     color: var(--soft-baige);
+    font-size: 18px;
 }
 
 header ul{
@@ -47,6 +48,10 @@ header ul{
     list-style: none;
     gap: 1em;
     align-items: center;
+}
+
+section{
+    margin-bottom: 2rem;
 }
 
 .home{
@@ -63,9 +68,43 @@ header ul{
 .home-paragraph {
     text-align: center;
     font-weight: 700;;
-    color: var(--soft-baige);
+    color: #fcfffc;
     font-size: 2.5rem;
     animation: ocean-wave 3s 0.5s infinite alternate;
+}
+
+.section-header{
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 2rem;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.my-img{
+    max-width: 640px;
+    max-height: 640px;
+    grid-column: 1/2;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about-info{
+    grid-column: 2/3;
+    font-size: 24px;
+    justify-self: start;
+    align-self:flex-start;
+    margin-right: 1rem;
+}
+.about-info p{
+    margin: 1rem;
 }
 
 @keyframes ocean-wave {
