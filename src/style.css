@@ -77,6 +77,20 @@ section{
     text-align: center;
     font-size: x-large;
     margin-bottom: 2rem;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+
+.card-project a {
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+    color: var(--soft-baige);
+}
+
+.section-header:hover,
+.card-project a:hover
+{
+    text-decoration-color:var(--soft-baige)
 }
 
 .about-content{
@@ -107,6 +121,37 @@ img{
     margin: 1rem;
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 12px;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.card-project{
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 1s;
+}
+
+
+
+.card-project:hover,
+.card-project:focus{
+    transform: scale(1.15);
+}
+
+.card-title{
+    font-size: 24px;
+    font-weight: 500;
+}
+
 @keyframes ocean-wave {
     0% {
         opacity: 0;
@@ -115,6 +160,6 @@ img{
 
     100% {
         opacity: 1;
-        font-size: 3rem;
+        font-size: 2.1rem;
     }
 }
