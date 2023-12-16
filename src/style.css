@@ -4,6 +4,7 @@
     box-sizing: border-box;
     --soft-baige: #f1fdf0;
     --background-color :#283131;
+    --salmon: #f36565;
 }
 html,body{
     height: 100%;
@@ -48,6 +49,11 @@ nav a {
     font-size: 18px;
 }
 
+nav a:hover,
+nav a:focus{
+    color: var(--salmon);
+}
+
 header ul{
     display: flex;
     list-style: none;
@@ -84,6 +90,7 @@ section{
     margin-bottom: 2rem;
     text-decoration: underline 0.15em rgba(0, 0, 0, 0);
     transition: text-decoration-color 300ms;
+    color: var(--salmon);
 }
 
 .card-project a {
@@ -185,7 +192,7 @@ img{
 
 .cv p a {
     text-decoration: none;
-    color: #ffffff;
+    color:var(--salmon);
 }
 
 .cv p:hover,
