@@ -20,14 +20,19 @@ main {
     font-family: 'Playfair Display', serif;
 }
 
-header{
+header, footer{
     display: flex;
-    margin: 2px 2px;
     padding: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
-header, footer{
-    font-family: 'Roboto', sans-serif;
+header{
+    margin: 2px 2px;
+}
+
+footer{
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
@@ -152,6 +157,64 @@ img{
     font-weight: 500;
 }
 
+
+.cv{
+    padding: 8px;
+    background-image: url("../img/ocean-large.jpg");
+    background-size: cover;
+    background-origin: center;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    border: 2px solid #ffffff;
+}
+
+.contact, .about, .projects{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+.cv{
+    margin: 1rem 0;
+}
+
+.cv p{
+    display:  inline-block;
+}
+
+.cv p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cv p:hover,
+.cv p:focus{
+    animation: rotate 2s 0.2s infinite;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-row img{
+    width: 16px;
+    height: 16px;
+}
+
+.contact-row a{
+    text-decoration: none;
+    color: var(--soft-baige);
+}
+
+.contact-row{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 @keyframes ocean-wave {
     0% {
         opacity: 0;
@@ -162,4 +225,27 @@ img{
         opacity: 1;
         font-size: 2.1rem;
     }
+}
+@keyframes rotate {
+    
+    0% {
+        transform: rotate(0);
+    }
+
+    15% {
+        transform: rotate(15deg);
+    }
+
+    45% {
+        transform: rotate(0);
+    }
+
+    60% {
+        transform: rotate(-15deg);
+    }
+
+    85% {
+        transform: rotate(0);
+    }
+
 }
